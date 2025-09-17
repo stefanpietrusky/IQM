@@ -34,3 +34,4 @@ pip install -r requirements.txt
 ```bash 
 python app.py
 ```
+[![Live demo](https://img.shields.io/badge/Live%20demo-iqm--lite.up.railway.app-2ea44f)](https://iqm-lite.up.railway.app/)
