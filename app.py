@@ -1,3 +1,10 @@
+"""
+title: IQM V3.5 [INTELLIGENT QUESTION MAKER]
+author: stefanpietrusky
+author_url: https://downchurch.studio/
+version: 0.1
+"""
+
 import os, subprocess, re, json, random, logging, string, openai, ast, sys
 from werkzeug.utils import secure_filename
 from flask import Flask, request, jsonify, send_from_directory
@@ -2542,4 +2549,5 @@ if __name__ == "__main__":
         generiere_html()
         generiere_css()
         generiere_js()
+
     app.run(host="0.0.0.0", port=5000)
