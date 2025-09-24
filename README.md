@@ -5,7 +5,7 @@
 
 This repository, developed by Stefan Pietrusky, describes the prototype IQM. IQM is a Flask-based quiz application that allows learners to automatically generate and edit practice questions from their own or uploaded materials. First, users can upload a PDF file, which is converted to text in the background using PyPDF2 and stored in the file system. Alternatively, existing text sources can be selected. A difficulty level is then set before the questions are generated via a button.
 
-There are two ways to generate responses: If an OpenAI API key is specified, the request is forwarded to the OpenAI API; otherwise, processing is performed locally via Ollama. The selected context from the uploaded file is integrated into the prompt, allowing for different types of questions (multiple choice, true/false, open-ended questions, sequencing, fill-in-the-blank, and matching tasks).
+There are two ways to generate responses. If an OpenAI API key is specified, the request is forwarded to the OpenAI API otherwise, processing is performed locally via Ollama. The selected context from the uploaded file is integrated into the prompt, allowing for different types of questions (multiple choice, true/false, open-ended questions, sequencing, fill-in-the-blank, and matching tasks).
 
 The generated tasks appear in the quiz interface, where learners enter their answers. Each answer is sent to the Flask app via a button, which controls the LLM with an evaluation prompt. For open-ended questions, the model provides a structured evaluation (four evaluation categories and an overall assessment), which is validated, processed, and output as feedback.
 
