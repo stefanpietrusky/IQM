@@ -1,7 +1,8 @@
 """
 title: IQM V3.5 [INTELLIGENT QUESTION MAKER]
 author: stefanpietrusky
-author_url: https://downchurch.studio/
+author_url1: https://downchurch.studio/
+author_url2: https://urlz.fr/uj1I [CAEDHET/HCDH Heidelberg University]
 version: 0.1
 """
 
@@ -2551,3 +2552,4 @@ if __name__ == "__main__":
         generiere_js()
 
     app.run(host="0.0.0.0", port=5000)
+
